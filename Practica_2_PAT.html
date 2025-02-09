@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PRACTICA 2 PAT</title>
+    <link rel="stylesheet" href="Practica2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="contenedor">
+                <li><a href="#home">¿Que es HTML?</a></li>
+                <li><a href="#table">Contenido de la web</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="https://www.comillas.edu/" target="_blank"><img src="https://infosj.es/images/LOGO_NUEVO_WEB.jpg" alt="Logo de Comillas con hyperlink a comillas.edu" width="300"></a><br><br>
+    <p></p>
+    <section id="home">
+        <h2>INICIO</h2>
+        <iframe id="wikipedia" src="https://es.wikipedia.org/wiki/HTML#Nociones_b%C3%A1sicas_de_HTML" ></iframe>
+    </section>
+
+    
+    <section id="table">
+        <h2>TABLA DE CONTENIDO</h2>
+        <table>
+            <caption id="leyenda">Elementos de la web</caption>
+            <thead>
+              <tr>
+                <th>Parte</th>
+                <th></th>
+                <th>Contenido</th>
+                <th></th>
+                <th>Cambios en CSS</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class="separador">
+                    <th rowspan="1">Inicio</th>
+                    <td></td>
+                    <td>La seccion de Inicio no aparecera hasta que se pulse el boton "¿Que es HTML?", y en ella aparecera un marco con la sección de wikipedia sobre HTML.</td>
+                    <td></td>
+                    <td>Gracias a CSS, hemos ajustado la sección para que solo aparezca cuando se pulsa el boton </td>
+                </tr>
+                <tr class="separador">
+                    <th rowspan="1">Tabla de contenido</th>
+                    <td></td>
+                    <td>En esta seccion, podemos encontrar esta misma tabla</td>
+                    <td></td>
+                    <td>Gracias a CSS, hemos podido darle una forma más adecuada a esta tabla</td>
+                    
+                </tr>
+                <tr class="separador">
+                    <th rowspan="1">Formulario</th>
+                    <td></td>
+                    <td>En esta sección, encontramos un formulario generico que te pregunta por tu nombre, dirección de correo, telefono, escoger entre 1,2,3 y abc, y te pregunta una fecha</td>
+                    <td></td>
+                    <td>Gracias a CSS, hemos podido darle forma al formulario y ajustar los tamaños y colores de la misma</td>
+                   
+                </tr>
+                <tr class="separador">
+                    <th rowspan="1">Comillas</th>
+                    <td></td>
+                    <td>Fijo a la izquierda de la pagina, podemos encontrar un hyperlink a comillas.edu como una imagen del logo de la universidad</td>
+                    <td></td>
+                    <td>Gracias a CSS, hemos fijado la posición de la imagen para que siempre aparezca en pantalla</td>
+                </tr>
+            </tbody>
+            </table>
+    </section>
+
+    <section id="formulario">
+        <h2>FORMULARIO</h2>
+        <p id="text_form">El siguiente formulario simulará un formulario genérico</p>
+        <form action="#" method="POST">
+            
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Hernando Hernandez" required><br><br>
+            
+            <label for="email">Dirección de correo:</label>
+            <input type="text" id="email" name="email" placeholder="HernandoHernadez@gmail.com" required><br><br>
+    
+
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono" placeholder="123456789" required><br><br>
+    
+            
+            <label for="lista">Elija un número (1-3):</label>
+            <select id="lista" name="lista">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br><br>
+    
+           
+            <label>Elija una opción:</label><br>
+            <input type="radio" id="opcionA" name="opcion" value="A">
+            <label for="opcionA">Opción A</label><br>
+            <input type="radio" id="opcionB" name="opcion" value="B">
+            <label for="opcionB">Opción B</label><br>
+            <input type="radio" id="opcionC" name="opcion" value="C">
+            <label for="opcionC">Opción C</label><br><br>
+    
+           
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required ><br><br>
+    
+           
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+
+   
+</body>
+</html>
+
